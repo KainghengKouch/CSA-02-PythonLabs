@@ -9,8 +9,13 @@
 # "J-J" ➞ "J"
 # Notes a hyphen will separate the two letters in the string.
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
+alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 user_range = input("Enter a range of letters (e.g., a-z): ")
+split_l = user_range.split('-')
+start = alphabet.index(split_l[0])
+end = alphabet.index(split_l[1])
+result_string = alphabet[start:end + 1]
+
 
 print(result_string)
